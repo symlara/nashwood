@@ -1,18 +1,16 @@
-import { useState } from "react";
 import nashwood from "./assets/nashwood-nw-icon-logo-black-rgb-640px-w-72ppi.png";
 import nashwood2 from "./assets/nashwood-nw-icon-logo-white-rgb-640px-w-72ppi.png";
 import nashwoodwordmark from "./assets/nashwood-nw-wordmark-logo-white-rgb-640px-w-72ppi.png";
 
-import "./App.css";
+import Navbar from "./components/Navbar";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
       <div className="flex justify-center items-center">
-        <img src={nashwoodwordmark} alt="nashwood-workmark" />
+        <img src={nashwoodwordmark} alt="nashwood-workmark" className="nashwood" />
       </div>
+      <Navbar />
       <div className="flex justify-center items-center">
         {/* <img
           src={nashwood2}
