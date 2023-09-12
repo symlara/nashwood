@@ -240,4 +240,24 @@ nav li a {
   .logo-img {
     visibility: hidden !important;
   }
+
+  .home-photos {
+    margin-top: 100px;
+    width: 100vw !important;
+  }
+
+  .salmon-photo {
+    width: 100%;
+  }
+
+  .snowcrab-photo {
+    width: 100%;
+  }
+
+  .vertical-timeline {
+    justify-content: center !important;
+    display: flex !important;
+    margin-left: 170px;
+    margin-top: 10px;
+  }
 }

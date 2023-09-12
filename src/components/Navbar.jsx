@@ -40,18 +40,18 @@ const Navbar = () => {
           ))}
         </ul>
         {/* mobile setup */}
-        <div className="sm:hidden flex flex-1 justify-end mt-[60px] items-center">
+        <div className="sm:hidden flex flex-1 mt-[50px] ml-[150px] items-center">
           <img
             src={toggle ? close : menu}
             alt="menu"
-            className="w-[28px] h-[28px] object-contain cursor-pointer"
+            className="w-[28px] h-[28px] object-contain cursor-pointer toggle-mobile"
             onClick={() => setToggle(!toggle)}
           />
 
           <div
             className={`${
               !toggle ? "hidden" : "flex"
-            } p-4 gray-gradient absolute top-20 right-0 mx-4 my-8 min-w-[60px] z-10 rounded-xl`}
+            } p-4 gray-gradient absolute top-20 right-0 mx-40 my-8 min-w-[50px] z-10 opacity-[0.8] rounded-xl`}
           >
             <ul className="list-none flex justify-end items-start flex-col gap-4">
               {navLinks.map((link) => (
