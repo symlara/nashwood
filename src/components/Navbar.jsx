@@ -26,13 +26,13 @@ const Navbar = () => {
         </Link>
       </div>
       <div className="w-full flex justify-between items-center mx-auto">
-        <ul className="list-none hidden sm:flex flex-row py-5 fixed gap-6 xl:ml-[1100px] 2xl:ml-[1600px]">
+        <ul className="list-none hidden sm:flex flex-row py-5 fixed gap-6 xl:ml-[900px]">
           {navLinks.map((link) => (
             <li
               key={link.id}
               className={`${
                 active === link.title ? "text-white" : "text-secondary"
-              } hover:text-white text-[25px] font-medium cursor-pointer`}
+              } hover:text-white xl:text-[15px] font-medium cursor-pointer`}
               onClick={() => setActive(link.title)}
             >
               <a href={`#${link.id}`}>{link.title}</a>

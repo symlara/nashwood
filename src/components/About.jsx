@@ -1,4 +1,5 @@
 import React from "react";
+import { Gallery } from "react-grid-gallery";
 
 const About = () => {
   return (
@@ -7,7 +8,7 @@ const About = () => {
       id="about"
     >
       <div className="justify-center items-center">
-        <p className="2xl:text-[45px] xl:text-[45px]">About section</p>
+        <p className="xl:text-[30px]">About section</p>
       </div>
     </section>
   );
